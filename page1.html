@@ -9,42 +9,78 @@
 
   <body>
 
-    <header>
-      <img src="/images/Adana_banner_Stone_Bridge.jpg" alt="Adana banner Stone Bridge" height="200px">
-      <br>
-      <cite>
-        "File:Adana banner Stone Bridge.jpg" by MUSTAFA TOR is licensed under CC0 1.0
-      </cite>
-    </header>
+    <div class="grid-container">
 
-    <nav>
-      <ul>
-        <li><a href="index.html">HOME</a></li>
-        <li><a href="page1.html">PAGE 1</a></li>
-        <li><a href="page2.html">PAGE 2</a></li>
-        <li><a href="https://www.columbusstate.edu/">CSU MAIN</a></li>
-      </ul>
-    </nav>
+      <header class="header">
+        <img class="banner" src="images/Adana_banner_Stone_Bridge.jpg" alt="Adana banner Stone Bridge">
+        <cite>
+          "File:Adana banner Stone Bridge.jpg" by MUSTAFA TOR is licensed under CC0 1.0
+        </cite>
+      </header>
+  
+      <nav class="nav">
+        <ul class="navbar">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="page1.html">PAGE 1</a></li>
+          <li><a href="page2.html">PAGE 2</a></li>
+          <li><a href="https://www.columbusstate.edu/">CSU MAIN</a></li>
+        </ul>
+      </nav>
+  
+      <main class="main">
+        <h1>
+          CPSC 2125 - ASSIGNMENT 1
+        </h1>
+  
+        <h2>
+          Concepts Covered in CPSC 2125:
+        </h2>
+  
+        <ol class="romancaps">
+          <li>CSS Box Model
+            <ol class="romanlower">
+              <li>Every HTML content element is contained in a rectangular <b>box</b></li>
+              <li>Each element has a a <b>border</b> surrounding its content, which may or may not be visible</li>
+              <li>Each element may also have extra inner space between the content and border <b>(padding)</b> or extra space outside the border between different elements <b>(margin)</b></li>
+            </ol>
+          </li>
+          <li>Absolute vs Relative Paths
+            <ol class="romanlower">
+              <li>Every file has a <b>path</b> which gives information about how to find where that file is actually located</li>
+              <li><b>Absolute paths</b> contain the full list of directories or folders required to locate a particular file starting at the top-level root directory </li>
+              <li><b>Relative paths</b> are shortened versions of paths which assume that you will continue your path from the current active directory, rather than starting at the top-level root directory</li>
+            </ol>
+          </li>
+          <li>Grid Layout
+            <ol class="romanlower">
+              <li>The default layout for a webpage (when no additional styling is applied) is to display elements one after another, straight down the page in the order they are listed within the HTML</li>
+              <li>The CSS Grid Layout is a way to easily organize elements into rows and columns</li>
+              <li>One common method of using CSS grids is to label each important element with class names, then explicitly define a template of where each section should display using <b>grid-template-areas</b> </li>
+            </ol>
+          </li>
+        </ol>
+                
+      </main>
+  
+      <footer class="footer">
+  
+        <p>
+          <h3><b>CONTACT US!</b></h3>
+        </p>
+        
+        <p>
+          Guy Person (Webmaster)<br>
+          guyperson@example.com<br>
+          1-800-123-4567
+          <address>
+            1234 Real Street<br>
+            Columbus, GA 31907
+          </address>
+        </p>
+  
+      </footer>
 
-    <main>
-    </main>
-
-    <footer>
-
-      <p>
-        CONTACT US
-      </p>
-      
-      <p>
-        Webmaster: Guy Person<br>
-        <a href="tel:+7061234567">(706) 123-4567</a>
-        <address>
-          1234 Real Street<br>
-          Columbus, GA 31907
-        </address>
-      </ul>
-
-    </footer>    
+    </div>
 
   </body>
 
