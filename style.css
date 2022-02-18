@@ -29,6 +29,7 @@ footer {
 
 body {
   font-family: Tahoma, sans-serif;
+  background-color: seagreen;
 }
 
 h1, h3 {
@@ -42,13 +43,10 @@ h1, h2, h3, p, address {
 a {
   padding: 10px;
   border: 2px solid lightseagreen;
+  background-color: seagreen;
 }
 
-a:link {
-  color: darkseagreen;
-}
-
-a:visited {
+a:link, a:visited {
   color: darkseagreen;
 }
 
@@ -80,7 +78,7 @@ ol.romanlower {
 }
 
 table, th, td {
-  border: 1px solid lightseagreen;
+  border: 2px solid darkseagreen;
 }
 
 table {
@@ -89,12 +87,19 @@ table {
   text-align: center;
   font-size: 1.5em;
   font-family: Garamond, serif;
+  border-collapse: collapse;
+  padding: 5px;
 }
 
 th {
   width: 200px;
   color: white;
   background-color: black;
+  padding: 5px;
+}
+
+td {
+  color: silver;
 }
 
 .tags li:nth-child(odd) {
