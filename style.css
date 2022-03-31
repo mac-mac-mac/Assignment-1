@@ -1,3 +1,8 @@
+body {
+  font-family: Tahoma, sans-serif;
+  background-color: seagreen;
+}
+
 header {
   background-color: darkseagreen;
   padding: 5px;
@@ -27,11 +32,6 @@ footer {
   font-family: "Courier New", monospace;
 }
 
-body {
-  font-family: Tahoma, sans-serif;
-  background-color: seagreen;
-}
-
 h1, h3 {
   text-decoration: underline;
 }
@@ -40,29 +40,39 @@ h1, h2, h3, p, address {
   text-align: center;
 }
 
-a {
+li > a {
   padding: 10px;
   border: 2px solid lightseagreen;
   background-color: seagreen;
+  text-decoration: none;
 }
 
-a:link, a:visited {
+li > a:link, li > a:visited {
   color: darkseagreen;
 }
 
-a:hover {
+li > a:hover {
   background-color: darkseagreen;
   color: darkcyan;
-  font-size: 200%;
+  font-size: 150%;
+}
+
+a {
+  text-decoration: none;
+  color: darkcyan;
+}
+
+a:hover {
+  font-weight: bold;
 }
 
 ul.navbar {
   list-style-type: none;
+  padding: 0;
 }
 
 ul.navbar > li {
-  display:inline;
-  padding:5px;
+  padding: 25px 10px;
 }
 
 ol.romancaps {
@@ -111,26 +121,125 @@ td {
 }
 
 .banner {
-  height:150px;
+  width: 95%;
   display: block;
   margin-left: auto;
   margin-right: auto;
   border: 5px inset darkcyan;
 }
 
+.index-pic {
+  width: 100%;
+  object-fit: cover;
+}
+
+.aside {
+  border: 5px solid darkseagreen;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px;
+}
+
 .header {grid-area: header;}
 .nav {grid-area: nav;}
 .main {grid-area: main;}
+.aside {grid-area: aside;}
 .footer {grid-area: footer;}
 
 .grid-container {
   display: grid;
   grid-template-areas:
-    'header'
-    'nav'
-    'main'
-    'footer';
-  grid-template-columns: auto auto auto auto auto;
+    'header header header'
+    'nav main aside'
+    'footer footer footer';
+  grid-template-columns: 20% 60% 20%;
   grid-gap: 5px;
   padding: 5px;
+}
+
+form > span {
+  color: lightgray;
+  font-size: 75%;
+}
+
+#myCanvas {
+  background-color: white;
+  color: black;
+  width: 100%;
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+}
+
+svg {
+  width: 100%;
+  height: 100%;
+}
+
+rect {
+  fill:green;
+  stroke:black;
+  stroke-width:2;
+  opacity:0.5
+}
+
+
+@media screen and (max-width: 750px) {
+  
+  .grid-container {
+    display: grid;
+    grid-template-areas:
+      'header'
+      'nav'
+      'main'
+      'aside'
+      'footer';
+    grid-template-columns: 100%;
+    grid-gap: 5px;
+    padding: 5px;
+  }
+
+  li > a:hover {
+    background-color: darkseagreen;
+    font-size: 100%;
+  }
+
+  body {
+    background-color: black;
+  }
+
+  nav, main, aside {
+    background-color: grey;
+    border: 5px solid darkseagreen;
+  }
+
+  header, footer {
+    background-color: darkseagreen;
+    border: 5px solid grey;
+  }
+
+  li > a {
+    border: 2px solid seagreen;
+    background-color: darkseagreen;
+  }
+
+  ul.navbar {
+    padding: 5px;
+  }
+
+  ul.navbar > li {
+    display: inline;
+    padding: 0 5px;
+  }
+
+  li > a:link, li > a:visited {
+    color: grey;
+  }
+
+  aside {
+    width: 95%;
+  }
+  
 }

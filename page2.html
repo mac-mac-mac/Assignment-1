@@ -3,7 +3,9 @@
 <html>
   
   <head>
-    <title>CPSC 2125: Assignment 1</title>
+    <title>
+      CPSC 2125: Assignments Portfolio
+    </title>
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
 
@@ -20,14 +22,15 @@
   
       <nav class="nav">
         <ul class="navbar">
-          <li><a href="index.html">HOME</a></li>
-          <li><a href="page1.html">PAGE 1</a></li>
-          <li><a href="page2.html">PAGE 2</a></li>
-          <li><a href="https://www.columbusstate.edu/">CSU MAIN</a></li>
+          <li><a href="index.html" tabindex="1">HOME</a></li>
+          <li><a href="page1.html" tabindex="2">PAGE 1</a></li>
+          <li><a href="page2.html" tabindex="3">PAGE 2</a></li>
+          <li><a href="page3.html" tabindex="4">PAGE 3</a></li>
+          <li><a href="https://www.columbusstate.edu/" tabindex="5">CSU</a></li>
         </ul>
       </nav>
   
-      <main class="main">
+      <main class="main" tabindex="6">
 
         <h1>
           CPSC 2125 - ASSIGNMENT 1
@@ -65,26 +68,27 @@
         </table>
         
       </main>
+
+      <aside class="aside" tabindex="7">
+        <iframe src="https://en.wikipedia.org/wiki/Main_Page" title="Wikipedia - The Free Encyclopedia"></iframe>
+      </aside>
   
-      <footer class="footer">
-  
+      <footer class="footer" tabindex="8">
         <p>
-          <h3><b>CONTACT US!</b></h3>
+          &copy; 2022, Created for CPSC 2125 <br>
+          Last Updated: <span id="update_date"></span>
         </p>
-        
+
         <p>
-          Guy Person (Webmaster)<br>
-          guyperson@example.com<br>
-          1-800-123-4567
-          <address>
-            1234 Real Street<br>
-            Columbus, GA 31907
-          </address>
+          Webmaster: Mac Barron <br>
+          <a href = "mailto: barron_mackenzie@columbusstate.edu">barron_mackenzie@columbusstate.edu</a>
         </p>
-  
+
       </footer>
 
     </div>
+
+    <script src="script.js"></script>
 
   </body>
 
