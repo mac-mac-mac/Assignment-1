@@ -22,11 +22,11 @@
   
       <nav class="nav">
         <ul class="navbar">
-          <li><a href="index.html" tabindex="1">HOME</a></li>
-          <li><a href="page1.html" tabindex="2">PAGE 1</a></li>
-          <li><a href="page2.html" tabindex="3">PAGE 2</a></li>
-          <li><a href="page3.html" tabindex="4">PAGE 3</a></li>
-          <li><a href="https://www.columbusstate.edu/" tabindex="5">CSU</a></li>
+          <li><a href="index.html" tabindex="0">HOME</a></li>
+          <li><a href="page1.html" tabindex="0">PAGE 1</a></li>
+          <li><a href="page2.html" tabindex="0">PAGE 2</a></li>
+          <li><a href="page3.html" tabindex="0">PAGE 3</a></li>
+          <li><a href="https://www.columbusstate.edu/" tabindex="0">CSU</a></li>
         </ul>
       </nav>
   
@@ -43,51 +43,51 @@
         <form name="myForm" action="https://webdevbasics.net/scripts/yoga.php" onsubmit="return validateForm()" method="post">
           
           <label for="fname">First Name:</label><br>
-          <input type="text" id="fname" name="fname" placeholder="John" size="50" maxlength="50" tabindex="6"><br>
+          <input type="text" id="fname" name="fname" placeholder="John" size="50" maxlength="50" tabindex="0"><br>
           <span>50 Characters Maximum</span><br>
           <br>
           
           <label for="lname">Last Name:</label><br>
-          <input type="text" id="lname" name="lname" placeholder="Doe" size="50" maxlength="50" tabindex="7"><br>
+          <input type="text" id="lname" name="lname" placeholder="Doe" size="50" maxlength="50" tabindex="0"><br>
           <span>50 Characters Maximum</span><br>
           <br>
 
           <label for="year">Birth Year:</label><br>
-          <input type="number" id="year" name="year" placeholder="1900" min="1900" max="2022" size="5" tabindex="8"><br>
+          <input type="number" id="year" name="year" placeholder="1900" min="1900" max="2022" size="5" tabindex="0"><br>
           <span>Between 1900-2022</span><br>
           <br>
           
           <label for="email">Email Address:</label><br>
-          <input type="email" id="email" name="email" placeholder="email@site.com" tabindex="9"><br>
+          <input type="email" id="email" name="email" placeholder="email@site.com" tabindex="0"><br>
           <br>
           
           <label for="username">* Desired Username:</label><br>
-          <input type="text" id="username" name="username" placeholder="Something" maxlength="10" minlength="5" required tabindex="9"><br>
+          <input type="text" id="username" name="username" placeholder="Something" maxlength="10" minlength="5" required tabindex="0"><br>
           <span>Between 5-10 Characters</span><br>
           <br>
 
           <label for="password">* Desired Password:</label><br>
-          <input type="password" id="password" name="password" minlength="8" required tabindex="10"><br>
+          <input type="password" id="password" name="password" minlength="8" required tabindex="0"><br>
           <span>8 Characters Minimum</span><br>
           <br>
 
           <label for="password2">* Repeat Desired Password:</label><br>
-          <input type="password" id="password2" name="password2" minlength="8" required tabindex="11"><br>
+          <input type="password" id="password2" name="password2" minlength="8" required tabindex="0"><br>
           <span>8 Characters Minimum</span><br>
           <br>
 
           <label for="phone">Telephone Number:</label><br>
-          <input type="tel" id="phone" name="phone" placeholder="706-123-4567" pattern="[0-9]{3}[-][0-9]{3}[-][0-9]{4}" tabindex="12"><br>
+          <input type="tel" id="phone" name="phone" placeholder="706-123-4567" pattern="[0-9]{3}[-][0-9]{3}[-][0-9]{4}" tabindex="0"><br>
           <span>###-###-####</span><br>
           <br>
           
-          <input type="submit" value="Submit" tabindex="13">
-          <input type="reset" tabindex="14">
+          <input type="submit" value="Submit" tabindex="0">
+          <input type="reset" tabindex="0">
         </form>
         
       </main>
 
-      <aside class="aside" tabindex="14">
+      <aside class="aside">
         <svg aria-labelledby="svgTitle svgDesc" role="img">
           <title id="svgTitle">Green Rounded Square</title>
           <desc id="svgDesc">A green rounded square with height and width of 100 and corner radii of 20.</desc>
@@ -95,7 +95,7 @@
         </svg>
       </aside>
   
-      <footer class="footer" tabindex="15">
+      <footer class="footer">
         <p>
           &copy; 2022, Created for CPSC 2125 <br>
           Last Updated: <span id="update_date"></span>
